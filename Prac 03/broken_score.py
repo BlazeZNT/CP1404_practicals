@@ -9,6 +9,9 @@ def main():
     print(change_score_to_result(score))
 
 
+""" fucntion to fiter the score into results """
+
+
 def change_score_to_result(score):
     if score > 100 or score < 0:
         return "The score is invalid"

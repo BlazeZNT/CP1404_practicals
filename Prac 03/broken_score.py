@@ -9,7 +9,7 @@ def main():
     print(change_score_to_result(score))
 
 
-""" fucntion to fiter the score into results """
+""" function to filter the score into results """
 
 
 def change_score_to_result(score):

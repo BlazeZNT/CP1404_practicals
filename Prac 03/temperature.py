@@ -8,6 +8,8 @@ Pseudocode for temperature conversion
         # Remove the "pass" statement when you are done. It's a placeholder.
         pass
 """
+
+
 def main():
     MENU = """    C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
@@ -21,7 +23,7 @@ def main():
             print("Result: {:.2f} F".format(fahrenheit))
         elif choice == "F":
             fahrenheit = float(input("Farenheit: "))
-            celsius = Change_fahrenheit_to_celsius(fahrenheit)
+            celsius = change_fahrenheit_to_celsius(fahrenheit)
             print("Result: {:.2f} F".format(celsius))
         else:
             print("Invalid option")
@@ -29,12 +31,18 @@ def main():
         choice = input(">>> ").upper()
     print("Thank you.")
 
-"""Convert fahrengeit to celsius"""
-def Change_fahrenheit_to_celsius(fahrenheit):
+
+"""Convert fahrenheit to celsius"""
+
+
+def change_fahrenheit_to_celsius(fahrenheit):
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
+
 """Convert celsius to fahrenheit"""
+
+
 def change_celsius_to_fahrenheit(celsius):
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit

@@ -3,6 +3,10 @@ def main():
     numbers[0] = "10"
     numbers[-1] = 1
     print(numbers[-5:7])
-    print(9 in numbers) ''' Check if number 9 is in list is not will say ,false'''
+    if 9 in numbers:
+        print("True")
+    else:
+        print("False")
+    ''' Check if number 9 is in list is not will say ,false'''
 if __name__ == '__main__':
     main()

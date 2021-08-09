@@ -1,4 +1,14 @@
 def main():
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+
+    username = input("Enter a user name: ")
+    while username not in usernames:
+        print("Access Denied")
+        username = input("Enter a user name: ")
+    else:
+        print("Acces Grated")
     numbers = []
     for i in range(5):
         number = int(input("Enter a number: "))

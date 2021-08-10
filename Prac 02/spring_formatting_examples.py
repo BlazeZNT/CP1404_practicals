@@ -46,4 +46,3 @@ print()
 
 for i in range (0, 151, 50):
     print("{:>5}".format(i))
-s

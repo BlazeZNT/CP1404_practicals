@@ -4,7 +4,12 @@ def main():
     while user_email != "":
         real_name = seperate_name_from_email(user_email)
         name_check = input("Is your name {} (Y/n)".format(real_name)).upper()
-
+        if name_check != "Y" and name_check != "":
+            real_name = input("Name :")
+        Email_To_Name[real_name] = user_email
+        user_email = input("Email:")
+    for  key, value in Email_To_Name.items():
+        print("{} ({})".format(key, value))
 
 
 

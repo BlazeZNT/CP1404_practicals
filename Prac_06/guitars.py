@@ -16,7 +16,6 @@ def main():
     guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
 
     print("These are my guitars ")
-    guitars.sort()
     for i, guitar in enumerate(guitars):
         vintage_string = ""
         if guitar.is_vintage():
@@ -25,5 +24,5 @@ def main():
                                                                  vintage_string))
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     main()

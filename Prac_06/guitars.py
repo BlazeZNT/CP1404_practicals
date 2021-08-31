@@ -25,5 +25,5 @@ def main():
                                                                  vintage_string))
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': 
     main()

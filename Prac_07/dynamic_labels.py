@@ -3,10 +3,9 @@ from kivy.lang import Builder
 from kivy.uix.button import Button
 
 
-
 class Dynamic_labels(App):
 
-    def __init__(self,**kwargs):
+    def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.name_to_phone = {"Joey": "555", "Brian": "666", "Zar NI": "777"}
 
@@ -24,5 +23,3 @@ class Dynamic_labels(App):
 
 
 Dynamic_labels().run()
-
-

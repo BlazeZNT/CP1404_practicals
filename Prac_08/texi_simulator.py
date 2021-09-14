@@ -23,13 +23,25 @@ def main():
                 print("Invalid Taxi Choice")
 
         elif menu_input == "d":
-            print("d")
+            if current_taxi:
+                current_taxi.start_fare()
+                drive_distance = float(input("Drive how Far? "))
+                current_taxi.drive(drive_distance)
+                cost = current_taxi.get_fare()
+                print("Your {} trip cost you ${:.2f}".format(current_taxi.name,
+                                                             cost))
+                current_bill += cost
+            else:
+                print("You need to choose a taxi before you can drive")
         else:
             print("Invalid Option")
         print("Bill to date: ${:.2f}".format(current_bill))
         print(menu)
         menu_input = input(">>> ").lower()
 
+    print("Total trip cost: ${:.2f}".format(current_bill))
+    print("Taxis are now")
+    print_taxi(taxis)
 
 def print_taxi(taxis):
     for i , taxi in enumerate(taxis):

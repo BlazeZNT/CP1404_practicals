@@ -12,5 +12,5 @@ def main():
         if i.is_dynamic():
             print(i.field)
 
-
+    print(ruby)
 main()
